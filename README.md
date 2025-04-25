@@ -1,54 +1,42 @@
-# Task Manager Application
+# 📝 Post Creator
 
-![Electron](https://img.shields.io/badge/Electron-47848F?style=for-the-badge&logo=electron&logoColor=white)
-![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
-![NestJS](https://img.shields.io/badge/NestJS-E0234E?style=for-the-badge&logo=nestjs&logoColor=white)
-![PostgreSQL](https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white)
+A full-stack blog post creation platform built with **NestJS**, **React**, and **Vite**. Create, preview, and manage blog posts with style.
 
-A cross-platform desktop task management application with Electron, React, and NestJS.
+---
+
+## 🚀 Tech Stack
+
+- **Frontend**: React 18, Vite, Valtio, Axios, Sass
+- **Backend**: NestJS 11, TypeORM, PostgreSQL
+- **Other**: Date-fns, Winston logger, Class Validator
+
+---
+
+## 🌟 Features
+
+- 📊 **Pagination and sorting**
+- 🔎 **Full-text search**
+- ⚙️ **API-ready backend** with validation & logging
+- 🗂 **PostgreSQL database** with TypeORM
+
+---
 
 
-## Features
+## ⚙️ Setup Instructions
 
-- 📝 Create, read, update, and delete tasks
-- ✅ Mark tasks as complete/incomplete
-- 🔍 Search tasks by title or description
-- 🗂 Filter tasks by completion status
-- 🖥 Cross-platform support (Windows, macOS, Linux)
-- 💾 Persistent storage with PostgreSQL
+### 1. Clone the repo
 
-## Technology Stack
-
-### Frontend
-- React.js
-- Electron.js
-- Axios (HTTP client)
-- React Icons
-
-### Backend
-- NestJS
-- TypeORM
-- PostgreSQL
-
-### Development Tools
-- Vite (React build tool)
-- TypeScript
-- SQLite (development alternative)
-
-## Installation
-
-### Prerequisites
-- Node.js v18+
-- PostgreSQL v14+
-- npm v9+
-
-### Steps
-
-1. **Clone the repository**
 ```bash
-git clone https://github.com/vk-workshop/task-manager.git
-cd task-manager
+git clone https://github.com/vk-workshop/post-creator.git
+cd post-creator
+
+# Backend
+cd nest-server
 npm install
-cd client && npm install && cd ..
-npm run build:client
-npm start
+
+# Frontend
+cd ../client
+npm install
+
+# From root
+npm run start
